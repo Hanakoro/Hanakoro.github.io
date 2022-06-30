@@ -1,0 +1,1905 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java基础 | Hanakoro</title>
+<link rel="shortcut icon" href="https://hanakoro.github.io/favicon.ico?v=1656578237007">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hanakoro.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Java基础 | Hanakoro - Atom Feed" href="https://hanakoro.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Before
+一、Java跨平台原理
+1.跨平台原理
+在需要运行Java应用程序的操作系统上，安装一个与操作系统对应的Java虚拟机（JVM Java Virtual Machine）。
+二、JRE和JKD
+1.JRE（Java Runti..." />
+    <meta name="keywords" content="Java,Java基础" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hanakoro.github.io">
+  <img class="avatar" src="https://hanakoro.github.io/images/avatar.png?v=1656578237007" alt="">
+  </a>
+  <h1 class="site-title">
+    Hanakoro
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Hanakoro" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Java基础
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-06-30
+              </span>
+              <span>
+                29 min read
+              </span>
+              
+                <a href="https://hanakoro.github.io/tag/Java/" class="post-tag">
+                  # Java
+                </a>
+              
+                <a href="https://hanakoro.github.io/tag/x_ckz9G3x/" class="post-tag">
+                  # Java基础
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://hanakoro.github.io/post-images/java-basis.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="before">Before</h2>
+<h3 id="一-java跨平台原理">一、Java跨平台原理</h3>
+<h4 id="1跨平台原理">1.跨平台原理</h4>
+<p>在需要<strong>运行Java应用程序</strong>的操作系统上，安装一个与操作系统对应的Java虚拟机（<strong>JVM Java Virtual Machine</strong>）。</p>
+<h3 id="二-jre和jkd">二、JRE和JKD</h3>
+<h4 id="1jrejava-runtime-environment">1.JRE（Java Runtime Environment）</h4>
+<p>是Java程序的运行时环境，包含<strong>JVM</strong>和运行时所需要的核心类库。</p>
+<p><strong>运行</strong>一个已有的Java程序，只需要安装<strong>JRE</strong>。</p>
+<h4 id="2jkdjava-development-kit">2.JKD（Java Development Kit）</h4>
+<p>是Java程序开发工具包，<strong>包含JRE</strong>和开发人员使用的工具。</p>
+<p>其中的开发工具：编译工具（<strong>javac.exe</strong>）和运行工具（<strong>java.exe</strong>）</p>
+<p><strong>开发</strong>一个全新的Java程序，必须安装JDK。</p>
+<h4 id="3jdk-jre和jvm的关系">3.JDK、JRE和JVM的关系</h4>
+<figure data-type="image" tabindex="1"><img src="https://hanakoro.github.io/post-images/image-20220404202426622.png" alt="image-20220404202426622" loading="lazy"></figure>
+<h3 id="三-其他">三、其他</h3>
+<h4 id="1常用dos命令">1.常用DOS命令</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">操作</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">盘符名称:</td>
+<td>盘符切换。E:回车，表示切换到E盘。</td>
+</tr>
+<tr>
+<td style="text-align:left">dir</td>
+<td>查看当前路径下的内容。</td>
+</tr>
+<tr>
+<td style="text-align:left">cd 目录</td>
+<td>进入单级目录。cd heima</td>
+</tr>
+<tr>
+<td style="text-align:left">cd ..</td>
+<td>回退到上一级目录。</td>
+</tr>
+<tr>
+<td style="text-align:left">cd 目录1\目录2\..</td>
+<td>进入多级目录。cd heima\Java</td>
+</tr>
+<tr>
+<td style="text-align:left">cd \</td>
+<td>回退到盘符目录。</td>
+</tr>
+<tr>
+<td style="text-align:left">cls</td>
+<td>清屏。</td>
+</tr>
+<tr>
+<td style="text-align:left">exit</td>
+<td>退出命令提示符窗口。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2注释">2.注释</h4>
+<pre><code class="language-java">//单行注释
+
+/*多行注释
+多行注释
+多行注释*/
+
+/**文档注释*/
+</code></pre>
+<h4 id="3逻辑运算符">3.逻辑运算符</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:center">作用</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">逻辑与</td>
+<td style="text-align:center">必须都是true，结果才是true；<strong>只要有一个是false，结果必是false</strong>。</td>
+</tr>
+<tr>
+<td style="text-align:center">|</td>
+<td style="text-align:center">逻辑或</td>
+<td style="text-align:center"><strong>只要有一个为true，结果就是true</strong>。</td>
+</tr>
+<tr>
+<td style="text-align:center">^</td>
+<td style="text-align:center">逻辑异或</td>
+<td style="text-align:center"><strong>!true=false、!false=true</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">!</td>
+<td style="text-align:center">逻辑非</td>
+<td style="text-align:center">两个条件都是true或都是false则结果是false。<strong>两个条件不同结果是true</strong>。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="短路逻辑运算符">短路逻辑运算符</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:center">作用</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&amp;&amp;</td>
+<td style="text-align:center">短路与</td>
+<td style="text-align:center">作用和 <strong>&amp;</strong> 相同，但是有短路效果(若<strong>第一个为false</strong>则结果为<strong>false</strong>)</td>
+</tr>
+<tr>
+<td style="text-align:center">||</td>
+<td style="text-align:center">短路或</td>
+<td style="text-align:center">作用和 <strong>|</strong> 相同，但是有短路效果(若<strong>第一个为true</strong>则结果为<strong>false</strong>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="start">Start</h2>
+<h3 id="键盘录入">键盘录入</h3>
+<h4 id="scanner-键盘录入步骤">Scanner - 键盘录入步骤</h4>
+<pre><code class="language-java">//1、导包
+import java.util.Scanner;
+//导包必须在类定义的上边
+//2、创建对象
+Scanner sc = new Scanner(System.in);
+//3、接收数据
+int i = sc.nextInt();
+</code></pre>
+<blockquote>
+<p>System、String在JDK中的Java.lang包下</p>
+<p>lang包不需要我们导包，是默认的包</p>
+</blockquote>
+<h3 id="random">Random</h3>
+<p>作用：用于产生一个随机数</p>
+<p>使用步骤：</p>
+<pre><code class="language-java">//1、导包
+import java.util.Random;
+//2、创建对象
+Random r = new Random();
+//3、获取随机数
+int number = r.nextInt(10);    //获取数据的范围：[0, 10)
+</code></pre>
+<h3 id="数组">数组</h3>
+<p><strong>动态初始化</strong></p>
+<p>只指定数组长度，由系统为数组分配初始值</p>
+<pre><code class="language-java">//数据类型[] 变量名 = new 数据类型[数组长度]
+int [] arr = new int [3];
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://hanakoro.github.io/post-images/image-20220412114933694.png" alt="image-20220412114933694" loading="lazy"></figure>
+<ul>
+<li>
+<p>栈内存：存储局部变量<br>
+定义在方法中的变量，使用完毕立即消失</p>
+</li>
+<li>
+<p>堆内存：存储new出来的内容(实体、对象)<br>
+数组在初始化时，会为存储空间添加默认值</p>
+<ul>
+<li>整数：<strong>0</strong></li>
+<li>浮点数：<strong>0.0</strong></li>
+<li>布尔值：<strong>false</strong></li>
+<li>字符：<strong>空字符</strong></li>
+<li>引用数据类型：<strong>null</strong></li>
+</ul>
+</li>
+<li>
+<p>每个new出来的东西都有一个地址值，使用完毕，会在垃圾回收器空闲时被回收</p>
+</li>
+</ul>
+<p><strong>静态初始化</strong></p>
+<p>初始化时指定每个数组元素的初始值，由系统决定数组长度</p>
+<p>定义数组的时候直接给数组赋值</p>
+<pre><code class="language-java">//完整格式
+//数据类型[] 变量名 = new 数据类型[]{数据1, 数据2, 数据3, ......};
+int[] arr = new int []{1, 2, 3};
+
+//简化格式
+//数据类型[] 变量名 = {数据1, 数据2, 数据3, ......};
+int[] arr = {1, 2, 3};
+</code></pre>
+<p><strong>数组长度</strong></p>
+<pre><code class="language-java">//数组名.length
+arr.length
+</code></pre>
+<h3 id="面向对象">面向对象</h3>
+<h3 id="集合类">集合类</h3>
+<p>集合类的特点：提供一种存储空间可变的存储模型，存储的数据容量可以发生改变</p>
+<h4 id="arraylist">ArrayList</h4>
+<p><code>ArrayList&lt;E&gt;</code></p>
+<ul>
+<li>可调整大小的数组实现</li>
+<li>&lt;E&gt;：是一种特殊的数据类型，泛型。<br>
+例：<code>ArrayList&lt;String&gt;</code>、<code>ArrayList&lt;Student&gt;</code></li>
+</ul>
+<h5 id="构造方法和添加方法">构造方法和添加方法</h5>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public ArratList()</td>
+<td>创建一个空的集合对象</td>
+</tr>
+<tr>
+<td>public boolean add(E e)</td>
+<td>将指定的元素追加到此集合的末尾</td>
+</tr>
+<tr>
+<td>public void add(int index, E element)</td>
+<td>在此集合中的指定位置插入指定的元素</td>
+</tr>
+</tbody>
+</table>
+<h5 id="常用方法">常用方法</h5>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public boolean remove(Object o)</td>
+<td>删除指定的元素，返回删除是否成功</td>
+</tr>
+<tr>
+<td>public E remove(int index)</td>
+<td>删除指定索引处的元素，返回被删除的元素</td>
+</tr>
+<tr>
+<td>public Eset(int index, E element)</td>
+<td>修改指定索引处的元素，返回被修改的元素</td>
+</tr>
+<tr>
+<td>public E get(int index)</td>
+<td>返回指定索引处的元素</td>
+</tr>
+<tr>
+<td>public int size()</td>
+<td>返回集合中的元素的个数</td>
+</tr>
+</tbody>
+</table>
+<p>概念</p>
+<p>体系结构</p>
+<p>接口以及常用方法<br>
+Iterator Collection List Set Map</p>
+<p>常用的集合类<br>
+HashSet ArrayList HashMap</p>
+<p>泛型</p>
+<h3 id="继承和多态">继承和多态</h3>
+<h4 id="继承">继承</h4>
+<pre><code class="language-java">//public class 子类名 extends 父类名{}
+</code></pre>
+<p>父类也被称为基类、超类</p>
+<p>子类也被称为派生类</p>
+<ul>
+<li>复用性</li>
+<li>维护性</li>
+</ul>
+<p><code>super</code>关键字的用法和<code>this</code>关键字的用法相似</p>
+<ul>
+<li>
+<p>this：代表本类对象的引用</p>
+<pre><code>this关键字指向调用该方法的对象
+</code></pre>
+</li>
+<li>
+<p>super：代表父类存储空间的标识(可以理解为父类对象引用)</p>
+</li>
+</ul>
+<p><strong>继承注意事项</strong></p>
+<ul>
+<li>Java中类只支持单继承，不支持多继承</li>
+<li>Java中类支持多层继承</li>
+</ul>
+<h5 id="方法重写">方法重写</h5>
+<p><code>@Override</code></p>
+<ul>
+<li>是一个注解</li>
+<li>可以帮助我们检查重写方法的方法声明的正确性</li>
+</ul>
+<p><strong>注意事项</strong></p>
+<ul>
+<li>私有方法不能被重写(父类私有成员，子类不能继承)</li>
+<li>子类方法访问权限不能更低( public &gt; 默认 &gt; 私有)</li>
+</ul>
+<h3 id="修饰符">修饰符</h3>
+<ul>
+<li>包</li>
+<li>导包</li>
+<li>修饰符</li>
+</ul>
+<h4 id="包">包</h4>
+<p>其实就是文件夹，对类进行分类管理</p>
+<p><strong>定义格式</strong></p>
+<ul>
+<li>格式：package 包名;    (多级包用<code>.</code>分开)</li>
+</ul>
+<h4 id="导包">导包</h4>
+<h4 id="修饰符-2">修饰符</h4>
+<h5 id="权限修饰符">权限修饰符</h5>
+<figure data-type="image" tabindex="3"><img src="https://hanakoro.github.io/post-images/image-20220419204133883.png" alt="image-20220419204133883" loading="lazy"></figure>
+<h5 id="状态修饰符">状态修饰符</h5>
+<h6 id="final-最终态">final (最终态)</h6>
+<p>可以修饰成员方法、成员变量、类<br>
+特点：</p>
+<ul>
+<li>修饰方法：表明该方法是最终方法，<strong>不能被重写</strong></li>
+<li>修饰变量：表明该变量是常量，不能再次被赋值</li>
+<li>修饰类：表明该类是最终类，<strong>不能被继承</strong></li>
+</ul>
+<p><strong>修饰局部变量</strong>：</p>
+<ul>
+<li>变量是基本类型：基本类型的数据值不能发生改变</li>
+<li>变量是引用类型：引用类型的地址值不能发生改变，但地址里的内容可以发生改变</li>
+</ul>
+<h6 id="static-静态">static (静态)</h6>
+<p>可以修饰成员方法、成员变量<br>
+特点：</p>
+<ul>
+<li>被类的所有对象共享</li>
+<li>可以通过类名调用 (<strong>推荐</strong>)<br>
+也可以通过对象名调用</li>
+</ul>
+<p><strong>访问特点</strong>：</p>
+<ul>
+<li>非静态的成员方法<br>
+能访问**(非)静态**的成员变量(方法)</li>
+<li>静态的成员方法<br>
+只能访问<strong>静态</strong>的成员变量(方法)</li>
+</ul>
+<h3 id="多态">多态</h3>
+<p>同一个对象，在不同时刻表现出来的不同形态</p>
+<p><strong>多态的前提和体现</strong></p>
+<blockquote>
+<ul>
+<li>有继承/实现关系</li>
+<li>有方法重写</li>
+<li>有父类引用指向子类对象</li>
+</ul>
+</blockquote>
+<h4 id="成员访问特点">成员访问特点</h4>
+<ul>
+<li><strong>成员变量</strong>：编译看左边，执行看左边</li>
+<li><strong>成员方法</strong>：编译看左边，执行看右边</li>
+</ul>
+<p>成员方法有重写，成员变量没有</p>
+<h4 id="好处和弊端">好处和弊端</h4>
+<ul>
+<li>好处：提高了程序的扩展性<br>
+定义方法时，用父类型作参数，在使用时用具体的子类型操作</li>
+<li>弊端：不能使用子类特有的功能</li>
+</ul>
+<h4 id="多态中的转型">多态中的转型</h4>
+<ul>
+<li>
+<p>向上转型</p>
+<p>​    从子到父</p>
+<p>​    父类引用指向子类对象</p>
+</li>
+<li>
+<p>向下转型</p>
+<p>​    从父到子</p>
+<p>​    父亲引用转为子类对象</p>
+</li>
+</ul>
+<h3 id="抽象类">抽象类</h3>
+<h4 id="概述">概述</h4>
+<p>不能创建对象的类称为“抽象类”（abstract class）</p>
+<p>在Java中，一个<strong>没有方法体</strong>的方法应该定义为<strong>抽象方法</strong>，而类中如果有<strong>抽象方法</strong>，该类必须定义为<strong>抽象类</strong></p>
+<h4 id="特点">特点</h4>
+<ul>
+<li>
+<p>抽象类和抽象方法必须使用<strong>abstract</strong>关键字修饰</p>
+<pre><code class="language-java">abstract class 抽象类名 {
+    abstract void 抽象方法名 ();    
+}
+</code></pre>
+</li>
+<li>
+<p>抽象类中不一定有抽象方法，有抽象方法的类一定是抽象类</p>
+</li>
+<li>
+<p>抽象类不能实例化，即不能用new关键字去产生对象</p>
+<p>​    参照多态的方式，抽象类通过子类对象实例化，称为抽象类多态</p>
+</li>
+<li>
+<p>抽象类的子类，要么重写抽象类中的所有抽象方法，要么也是抽象类</p>
+</li>
+</ul>
+<h4 id="抽象类的成员特点">抽象类的成员特点</h4>
+<ul>
+<li>
+<p>成员变量</p>
+<p>可以是变量，也可以是常量</p>
+</li>
+<li>
+<p>构造方法</p>
+<p>有构造方法，但不能实例化，用于子类访问父类数据的初始化</p>
+</li>
+<li>
+<p>成员方法</p>
+<p>可以有抽象方法：限定子类必须完成某些动作</p>
+<p>也可以有非抽象方法：提高代码复用性</p>
+</li>
+</ul>
+<h3 id="接口">接口</h3>
+<h4 id="概述-2">概述</h4>
+<p>是一些方法特征的集合，但没有方法的实现</p>
+<p>是一种<strong>公共的规范标准</strong>，只要符合规范标准，大家就可以通用</p>
+<p>Java中的接口更多的体现在<strong>对行为的抽象</strong></p>
+<p>接口中定义的方法在不同的地方被实现，可以具有完全不同的行为</p>
+<h4 id="接口的特点">接口的特点</h4>
+<ul>
+<li>
+<p>接口用关键字<strong>interface</strong>修饰</p>
+<pre><code class="language-java">public interface 接口名{}
+</code></pre>
+</li>
+<li>
+<p>类实现接口用<strong>implements</strong>表示</p>
+<pre><code class="language-java">public class 类名 implements 接口名{}
+</code></pre>
+</li>
+<li>
+<p>接口不能实例化</p>
+<p>参照多态的方式，通过实现类对象实例化，称为接口多态</p>
+<p>多态的形式：具体类多态，<strong>抽象类多态</strong>，<strong>接口多态</strong></p>
+<p>多态的前提：有继承或者实现关系；有方法重写；有父(类/接口)引用指向(子/实现)类对象</p>
+</li>
+<li>
+<p>接口的实现类，要么重写接口中的所有抽象方法，要么也是抽象类</p>
+</li>
+</ul>
+<h4 id="接口的成员特点">接口的成员特点</h4>
+<ul>
+<li>
+<p>成员变量</p>
+<p>只能是常量</p>
+<p>默认修饰符：<code>public static final</code></p>
+</li>
+<li>
+<p>构造方法</p>
+<p>接口没有构造方法，因为接口主要是对行为进行抽象的，没有具体存在</p>
+<p>一个类如果没有父类，默认继承自<code>Object</code>类</p>
+</li>
+<li>
+<p>成员方法</p>
+<p>只能是抽象方法</p>
+<p>默认修饰符：<code>public abstract</code></p>
+</li>
+</ul>
+<h4 id="类和接口的关系">类和接口的关系</h4>
+<ul>
+<li>
+<p>类和类的关系</p>
+<p>继承关系，只能单继承，但是可以多层继承</p>
+</li>
+<li>
+<p>类和接口的关系</p>
+<p>实现关系，可以单实现，也可以多实现，还可以在继承一个类的同时实现多个接口</p>
+</li>
+<li>
+<p>接口和接口的关系</p>
+<p>继承关系，可以单继承，也可以多继承</p>
+</li>
+</ul>
+<h4 id="抽象类和接口的区别">抽象类和接口的区别</h4>
+<ul>
+<li>
+<p>成员区别</p>
+<p>抽象类            变量，常量；有构造方法；有抽象方法，也有非抽象方法</p>
+<p>接口                常量；抽象方法</p>
+</li>
+<li>
+<p>关系区别</p>
+<p>类与类            继承，单继承</p>
+<p>类与接口        实现，可以单实现，也可多实现</p>
+<p>接口与接口    继承，单继承，多继承</p>
+</li>
+<li>
+<p>设计理念区别</p>
+<p>抽象类            对类抽象，包括属性、行为</p>
+<p>接口                对行为抽象，主要是行为</p>
+</li>
+</ul>
+<h4 id="形参和返回值">形参和返回值</h4>
+<h5 id="类名作为形参和返回值">类名作为形参和返回值</h5>
+<ul>
+<li>方法的形参是类名，其实需要的是该类的对象</li>
+<li>方法的返回值是类名，其实返回的是该类的对象</li>
+</ul>
+<h5 id="抽象类名作为形参和返回值">抽象类名作为形参和返回值</h5>
+<ul>
+<li>方法的形参是抽象类名，其实需要的是该抽象类的子类对象</li>
+<li>方法的返回值是抽象类名，其实返回的是该抽象类的子类对象</li>
+</ul>
+<h5 id="接口名作为形参和返回值">接口名作为形参和返回值</h5>
+<ul>
+<li>方法的形参是接口名，其实需要的是该接口的实现类对象</li>
+<li>方法的返回值是接口名，其实返回的是该接口的实现类对象</li>
+</ul>
+<h3 id="内部类">内部类</h3>
+<p>在一个类中定义一个类。在一个类A的内部定义一个类B，类B就被称为内部类</p>
+<p>定义格式</p>
+<ul>
+<li>
+<p>格式：</p>
+<pre><code class="language-java">public class 类名{
+    修饰符 class 类名{
+    }
+}
+</code></pre>
+</li>
+<li>
+<p>范例：</p>
+<pre><code class="language-java">public class Outer{
+    public  class Inner{
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h4 id="访问特点">访问特点</h4>
+<ul>
+<li>内部类可直接访问外部类的成员，包括私有</li>
+<li>外部类要访问内部类的成员，必须创建对象</li>
+</ul>
+<h4 id="成员内部类">成员内部类</h4>
+<p>按照内部类在类中定义的位置不同，可分两种形式</p>
+<ul>
+<li>在类的成员位置：成员内部类</li>
+<li>在类的局部位置；局部内部类</li>
+</ul>
+<h5 id="外界创建对象使用成员内部类">外界创建对象使用成员内部类</h5>
+<pre><code class="language-java">//外部类名.内部类名 对象名 = 外部类对象.内部类对象;
+Outer.Inner oi = new Outer().new Inner();
+</code></pre>
+<h4 id="局部内部类">局部内部类</h4>
+<p>局部内部类是在方法中定义的类，外界无法直接使用，需在方法内部创建对象并使用</p>
+<p>该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
+<h4 id="匿名内部类">匿名内部类</h4>
+<p>前提：存在一个类或者接口，这里的类可以是具体类也可以是抽象类</p>
+<pre><code class="language-java">//格式：
+new 类名或接口名() {
+    重写方法;
+};
+
+//范例：
+new Inter() {
+    public void show(){
+    }
+};
+</code></pre>
+<p><strong>本质：是一个继承了该类或者实现了该接口的子类匿名对象</strong></p>
+<h3 id="api">API</h3>
+<figure data-type="image" tabindex="4"><img src="https://hanakoro.github.io/post-images/image-20220411095907326.png" alt="image-20220411095907326" loading="lazy"></figure>
+<h4 id="api概述">API概述</h4>
+<p>API（Application Programming Interface）:应用程序编程接口</p>
+<p>Java API：指JDK中提供的各种功能的Java类。是Java写好的程序(功能代码)，可以直接调用</p>
+<p>Oracle为Java写好的程序提供了相应的**<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">API文档</a>(技术使用说明书)**</p>
+<h4 id="string和stringbuilder">String和StringBuilder</h4>
+<h5 id="string">String</h5>
+<p><code>String</code>类在<code>Java.lang</code>包下，使用时不需要导包</p>
+<p><code>String</code>类代表字符串，<code>Java</code>程序中所有字符串文字都被实现为此类的实例</p>
+<p><code>Java</code>程序中所有的双引号字符串，都是<code>String</code>类的对象</p>
+<figure data-type="image" tabindex="5"><img src="https://hanakoro.github.io/post-images/image-20220414110358586.png" alt="image-20220414110358586" loading="lazy"></figure>
+<h6 id="string构造方法">String构造方法</h6>
+<figure data-type="image" tabindex="6"><img src="https://hanakoro.github.io/post-images/image-20220414110627783.png" alt="image-20220414110627783" loading="lazy"></figure>
+<h6 id="string对象的特点">String对象的特点</h6>
+<figure data-type="image" tabindex="7"><img src="https://hanakoro.github.io/post-images/image-20220414110943317.png" alt="image-20220414110943317" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://hanakoro.github.io/post-images/image-20220414111020845.png" alt="image-20220414111020845" loading="lazy"></figure>
+<h6 id="字符串的比较">字符串的比较</h6>
+<p>使用<code>==</code>做比较</p>
+<ul>
+<li>基本类型：比较的是<strong>数据值</strong>是否相同</li>
+<li>引用类型：比较的是<strong>地址值</strong>是否相同</li>
+</ul>
+<p>字符串是一个类，用<code>==</code>比较的是地址值。</p>
+<p>比较内容是否相同，可通过<code>equals()</code>方法实现</p>
+<blockquote>
+<p>public boolen <strong>equals(Object anObject)</strong>：将此字符串与指定对象进行比较。由于比较的是字符串对象，所以参数直接传递一个字符串。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public boolean equals(Object anObject)</code></td>
+<td>比较字符串的内容，严格区分大小写</td>
+</tr>
+<tr>
+<td><code>public boolean equalsIgnoreCase(String anotherString)</code></td>
+<td>比较字符串的内容，忽略大小写</td>
+</tr>
+<tr>
+<td><code>public char charAt(int index)</code></td>
+<td>返回指定索引处的<code>char</code>值</td>
+</tr>
+<tr>
+<td><code>public int length()</code></td>
+<td>返回次字符串的长度</td>
+</tr>
+</tbody>
+</table>
+<h5 id="stringbuilder">StringBuilder</h5>
+<p>StringBuilder 是一个<strong>可变的</strong>（对象中的内容可变）字符串类，我们可以把它看成是一个容器。</p>
+<blockquote>
+<p>String 和 StringBuilder 的区别</p>
+<ul>
+<li>String：内容是不可变的</li>
+<li>StringBuilder：内容是可变的</li>
+</ul>
+</blockquote>
+<h6 id="构造方法">构造方法</h6>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public StringBuilder()</td>
+<td>创建一个空白的可变字符串对象，不含有任何内容</td>
+</tr>
+<tr>
+<td>public StringBuilder(String str)</td>
+<td>根据字符串的内容，来创建可变字符串对象</td>
+</tr>
+</tbody>
+</table>
+<h6 id="添加和反转方法">添加和反转方法</h6>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public StringBuilder append(任意类型)</td>
+<td>添加数据，并返回对象本身</td>
+</tr>
+<tr>
+<td>public StringBuilder reverse()</td>
+<td>返回相反的字符序列</td>
+</tr>
+</tbody>
+</table>
+<h5 id="string和stringbuilder相互转化">String和StringBuilder相互转化</h5>
+<ol>
+<li>StringBuilder转换为String<br>
+<code>public String toString()</code>：通过<code>toString()</code>可以实现把StringBuilder转换为String</li>
+<li>String转换为StringBuilder<br>
+<code>public StringBuilder(String s)</code>：通过构造方法就可以实现把String转换为StringBuilder</li>
+</ol>
+<h4 id="字符串缓冲类-stringbuffer">字符串缓冲类-StringBuffer</h4>
+<h5 id="构造方法-2">构造方法：</h5>
+<ul>
+<li>
+<p>构造一个其中不带字符的字符串缓冲区，初始容量为 16 个字符</p>
+<p><code>new StringBuffer( );</code></p>
+</li>
+<li>
+<p>构造一个不带字符，但具有指定初始容量的字符串缓冲区。</p>
+<p><code>new StringBuffer( int len );</code></p>
+</li>
+<li>
+<p>构造一个字符串缓冲区，并将其内容初始化为指定的字符串内容。</p>
+<p><code>new StringBuffer( String s );//常用</code></p>
+</li>
+</ul>
+<h5 id="方法">方法：</h5>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>append(double d)</code>//追加d的字符串表示</td>
+</tr>
+<tr>
+<td><code>append(float f)</code></td>
+</tr>
+<tr>
+<td><code>append(int i)</code></td>
+</tr>
+<tr>
+<td><code>delete(int start, int end)</code></td>
+</tr>
+<tr>
+<td><code>insert(int offset, int i)</code></td>
+</tr>
+<tr>
+<td><code>substring(int start, int end)</code></td>
+</tr>
+<tr>
+<td><code>indexOf(String str, int fromIndex)</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="作用">作用：</h5>
+<p>在实际应用中，经常会遇到对字符串进行动态修改，这时String类的功能受到限制， StringBuffer能高效地完成字符串的动态添加、插入和替换等操作</p>
+<img src="file://C:/Users/24846/Documents/Gridea/post-images/image-20220424213311520.png" alt="image-20220424213311520"  />
+<h4 id="math">Math</h4>
+<blockquote>
+<p><code>java.lang.Object</code></p>
+<p><code>public final class Math</code></p>
+</blockquote>
+<p><strong><code>Math</code>包含执行基本数字运算的方法</strong>，如基本指数，对数，平方根和三角函数。</p>
+<p>成员都是静态的，通过类名就可以直接调用。</p>
+<h5 id="常用方法-2">常用方法</h5>
+<img src="file://C:/Users/24846/Documents/Gridea/post-images/image-20220422215408983.png" alt="image-20220422215408983" style="zoom:67%;" />
+<h4 id="system">System</h4>
+<p><code>System</code>包含几个有用的类字段和方法，它不能被实例化</p>
+<h5 id="常用方法-3">常用方法</h5>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public static void <strong>exit(int status)</strong></td>
+<td>终止当前运行的Java虚拟机，非零表示异常终止</td>
+</tr>
+<tr>
+<td>public static long <strong>currentTimeMillis()</strong></td>
+<td>返回当前时间(以毫秒为单位)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="object">Object</h4>
+<p>类<code>Object</code>是类层次结构的根。每个类都有Object作为父类。所有对象(包括数组)都实现了这个类的方法。</p>
+<p>构造方法：<code>public Object()</code></p>
+<h5 id="常用方法-4">常用方法</h5>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public String toString()</td>
+<td>返回对象的字符串表示形式。建议所有子类重写该方法，自动生成</td>
+</tr>
+<tr>
+<td>public boolean equals(Object obj)</td>
+<td>比较对象是否相等。默认比较地址，重写可以比较内容，自动生成</td>
+</tr>
+</tbody>
+</table>
+<h4 id="arrays">Arrays</h4>
+<p>Arrays类包含用于操作数组的各种方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public static String toString(int[] a)</td>
+<td>返回指定数组内容的字符串表示形式</td>
+</tr>
+<tr>
+<td>public static void sort(int[] a)</td>
+<td>按照数字顺序排序指定的数组</td>
+</tr>
+</tbody>
+</table>
+<p>工具类的设计思想：</p>
+<ul>
+<li>构造方法用<code>private</code>修饰</li>
+<li>成员用<code>public static</code></li>
+</ul>
+<h4 id="包装类">包装类</h4>
+<p>基本数据类型指示纯粹的数据，除了自身数据信息之外，没有其他信息。</p>
+<p>将基本数据类型封装成对象的好处在于，可以在对象中定义更多的功能方法操作该数据</p>
+<table>
+<thead>
+<tr>
+<th>基本数据类型</th>
+<th>包装类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+<h5 id="包装类的操作方法">包装类的操作方法：</h5>
+<ul>
+<li>
+<p>除<code>Character</code>外，所有的包装类都有两个构造方法</p>
+</li>
+<li>
+<p>带有基本值参数并创建包装类对象的构造函数</p>
+<p>如：<code>Integer obj = new Integer(145);</code>（已过时）</p>
+<p>新：<code>Integer i1 = Integer.valueOf(100);</code></p>
+</li>
+<li>
+<p>带有字符串参数并创建包装类对象的构造函数</p>
+<p>如：<code>new Integer(&quot;-45.36&quot;);</code>（已过时）</p>
+<p>新：<code>Integer i1 = Integer.valueOf(&quot;100&quot;);</code></p>
+</li>
+<li>
+<p>生成字符串表示法的<code>toString()</code>方法，如：<code>obj.toString()</code></p>
+</li>
+<li>
+<p>对同一个类的两个对象进行比较的<code>equals()</code>方法，如：<code>obj1.equals(obj2)</code></p>
+<p><code>obj1.compareTo(obj2)</code>：比较两个数的大小，如果相等返回<code>0</code>，<code>obj1&gt;obj2</code>返回<code>1</code>，<code>obj1&lt;obj2</code>返回<code>-1</code></p>
+</li>
+<li>
+<p>转换相应类型</p>
+<table>
+      <tr>
+          <td>intValue();</td>
+          <td>doubleValue();</td>
+          <td>byteValue();</td>
+      </tr>
+      <tr>
+          <td>floatValue();</td>
+          <td>shortValue();</td>
+          <td>longValue();</td>
+      </tr>
+  </table>
+</li>
+<li>
+<p>转换成<strong>相应的原始类型</strong></p>
+<figure data-type="image" tabindex="9"><img src="https://hanakoro.github.io/post-images/image-20220424210308195.png" alt="image-20220424210308195" loading="lazy"></figure>
+</li>
+<li>
+<p>创建一个包装类对象</p>
+<figure data-type="image" tabindex="10"><img src="https://hanakoro.github.io/post-images/image-20220424210358002.png" alt="image-20220424210358002" loading="lazy"></figure>
+</li>
+</ul>
+<h5 id="integer类">Integer类</h5>
+<p>包装一个对象中的原始类型<code>int</code>的值</p>
+<figure data-type="image" tabindex="11"><img src="https://hanakoro.github.io/post-images/image-20220430173136742.png" alt="image-20220430173136742" loading="lazy"></figure>
+<h5 id="int和string的相互转换">int和String的相互转换</h5>
+<p>基本类型包装类的最常见操作就是：用于基本类型和字符串之间的相互转换</p>
+<ol>
+<li>
+<p>int 转换为 String</p>
+<p><code>public static String valueOf(int i)</code>：返回int参数的字符串表示形式。String类中的方法。</p>
+</li>
+<li>
+<p>String 转换为 int</p>
+<p><code>public static int parseInt(String s)</code>：将字符串解析为int类型。Integer类中的方法。</p>
+</li>
+</ol>
+<h5 id="自动装箱和拆箱">自动装箱和拆箱</h5>
+<ul>
+<li>装箱：把基本数据类型转换为对应的包装类类型</li>
+<li>拆箱：把包装类类型转换为对应的基本数据类型</li>
+</ul>
+<p>jdk1.5以后，提供了一个很有用的特征：<br>
+自动的“装箱”和“拆箱”，在<code>int</code>和<code>Integer</code>之间、<code>double</code>和<code>Double</code>之间等，进行相互转换的时候，可以不用显示地写出代码，java会自动替我们完成转换。</p>
+<ul>
+<li>
+<p>自动将匹配的基本类型包装成对象</p>
+<p>如：<code>Integer i = 100;    //自动装箱</code></p>
+</li>
+<li>
+<p>自动将对象转化为基本类型数据</p>
+<p>如：<code>int j = i;    //自动拆箱</code></p>
+</li>
+<li>
+<p><strong>便于批量转换数据和对象，提高开发效率</strong></p>
+</li>
+</ul>
+<pre><code class="language-java">Integer i = 100;    //自动装箱
+i += 200;            //i = i + 200; i + 200自动拆箱; i = i + 200自动装箱
+</code></pre>
+<blockquote>
+<p>**注意：**在使用包装类类型的时候，如果做操作，最好先判断是否为<code>null</code></p>
+<p>​            <strong>只要是对象，在使用前必须进行不为<code>null</code>的判断</strong></p>
+</blockquote>
+<h4 id="日期类">日期类</h4>
+<h5 id="date类">Date类</h5>
+<p>Date代表了一个特定的事件，精确到毫秒</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public Date()</td>
+<td>分配一个Date对象，并初始化，以便它代表它被分配的时间，精确到毫秒</td>
+</tr>
+<tr>
+<td>public Date(long date)</td>
+<td>分配一个Date对象，并将其初始化为表示从标准基准时间起指定的毫秒数</td>
+</tr>
+</tbody>
+</table>
+<h6 id="date类常用方法">Date类常用方法</h6>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public long getTime();</td>
+<td>获取的是日期对象从1970年1月1日00:00:00到现在的毫秒值</td>
+</tr>
+<tr>
+<td>public void setTime(long time);</td>
+<td>设置时间，传的是毫秒值</td>
+</tr>
+</tbody>
+</table>
+<h5 id="simpledateformat类">SimpleDateFormat类</h5>
+<p><code>SimpleDateFormat</code>是一个具体的类，用于以区域设置敏感的方式格式化和解析日期。<strong>日期格式化和解析</strong></p>
+<p>日期和时间格式由日期和时间模式字符串指定，在日期和时间模式字符串中，从 ‘A’ 到 ‘Z’ 以及从 ‘a’ 到 ‘z’ 的字母，被解释为表示日期或事件字符串的组件的模式字母。</p>
+<ul>
+<li>
+<p>常用的模式字母及对应关系如下：</p>
+<table style="background='#87c0ca'">
+      <tr>
+          <td>y</td>
+          <td>年</td>
+      </tr>
+      <tr>
+          <td>M</td>
+          <td>月</td>
+      </tr>
+      <tr>
+          <td>d</td>
+          <td>日</td>
+      </tr>
+      <tr>
+          <td>H</td>
+          <td>时</td>
+      </tr>
+      <tr>
+          <td>m</td>
+          <td>分</td>
+      </tr>
+      <tr>
+          <td>s</td>
+          <td>秒</td>
+      </tr>
+  </table>
+</li>
+</ul>
+<h6 id="构造方法-3">构造方法</h6>
+<figure data-type="image" tabindex="12"><img src="https://hanakoro.github.io/post-images/image-20220501175333401.png" alt="image-20220501175333401" loading="lazy"></figure>
+<p>格式化和解析日期</p>
+<ol>
+<li>
+<p>格式化（从 Date 到 String ）</p>
+<p><code>public final String format(Date date)</code>：将日期格式化成日期/时间字符串</p>
+</li>
+<li>
+<p>解析（从 String 到 Date ）</p>
+<p><code>public Date parse(String source)</code>：从给定字符串的开始解析文本以生成日期</p>
+</li>
+</ol>
+<h5 id="calendar类">Calendar类</h5>
+<h6 id=""></h6>
+<h3 id="java异常处理">Java异常处理</h3>
+<p>Java异常是Java提供的用于处理程序中错误的一种机制。</p>
+<ul>
+<li>所谓错误是指在程序运行的过程中发生的一些异常事件（如：数组下标越界，所要读取的文件不存在等）</li>
+<li>Java异常分为运行时异常 和 非运行时异常</li>
+<li>设计良好的程序应该在异常发生时提供处理这些错误的方法，使得程序不会因为异常的发生而终止程序的执行。</li>
+</ul>
+<p>示例：</p>
+<ul>
+<li>数组越界异常</li>
+<li>空指针异常</li>
+<li>算数异常</li>
+<li>类型转换异常</li>
+</ul>
+<h4 id="java异常分类">Java异常分类：</h4>
+<p>java异常在java语言中是java提供的用于处理程序中错误的一种机制</p>
+<p>异常是一个对象，它继承于<code>Throwable</code>类，所有的<code>Throwable</code>类的子孙类所产生的对象都是例外（异常）。从<code>Throwable</code>直接派生出的异常类有 <code>Exception</code> 和 <code>Error</code></p>
+<img src="file://C:/Users/24846/Documents/Gridea/post-images/image-20220424214406705.png" alt="image-20220424214406705" style="zoom:80%;" />
+<figure data-type="image" tabindex="13"><img src="https://hanakoro.github.io/post-images/image-20220424214435737.png" alt="image-20220424214435737" loading="lazy"></figure>
+<h4 id="异常处理">异常处理</h4>
+<p><strong>异常处理语句</strong></p>
+<p>异常处理语句有<code>try</code>、<code>catch</code>、<code>finally</code>、<code>throw</code>和<code>throws</code></p>
+<p><strong>异常处理的基本结构</strong></p>
+<pre><code class="language-java">try {
+    //包含可能会出现异常的语句
+} catch(SomeException1 ex1) {
+    //捕获并处理异常
+} catch(SomeException2 ex2) {
+    //捕获并处理异常
+} finally {
+    //无论是否发生异常均执行
+}
+</code></pre>
+<p>可以有一个或者多个<code>catch</code>代码块，每个<code>catch</code>代码块声明其能处理的一种特定类型的异常并提供处理的方法</p>
+<p><code>finally</code>代码块无论是否发生异常都有执行</p>
+<figure data-type="image" tabindex="14"><img src="https://hanakoro.github.io/post-images/image-20220424214846224.png" alt="image-20220424214846224" loading="lazy"></figure>
+<figure data-type="image" tabindex="15"><img src="https://hanakoro.github.io/post-images/image-20220424214951962.png" alt="image-20220424214951962" loading="lazy"></figure>
+<figure data-type="image" tabindex="16"><img src="https://hanakoro.github.io/post-images/image-20220424215029981.png" alt="image-20220424215029981" loading="lazy"></figure>
+<figure data-type="image" tabindex="17"><img src="https://hanakoro.github.io/post-images/image-20220424215053242.png" alt="image-20220424215053242" loading="lazy"></figure>
+<figure data-type="image" tabindex="18"><img src="https://hanakoro.github.io/post-images/image-20220424215107016.png" alt="image-20220424215107016" loading="lazy"></figure>
+<figure data-type="image" tabindex="19"><img src="https://hanakoro.github.io/post-images/image-20220424215123756.png" alt="image-20220424215123756" loading="lazy"></figure>
+<figure data-type="image" tabindex="20"><img src="https://hanakoro.github.io/post-images/image-20220424215131616.png" alt="image-20220424215131616" loading="lazy"></figure>
+<figure data-type="image" tabindex="21"><img src="https://hanakoro.github.io/post-images/image-20220424215146893.png" alt="image-20220424215146893" loading="lazy"></figure>
+<h3 id="集合类-2">集合类</h3>
+<h3 id="输入输出流">输入输出流</h3>
+<h4 id="文件处理">文件处理</h4>
+<p>I/O处理中，最常见的是对文件的操作，java.io包中有关文件处理的类有： File、FileInputStream、FileOutputStream</p>
+<h5 id="file">File</h5>
+<p>类java.io.File提供了一种与机器无关的方式来描述一个文件对象的属性；代表系统文件或者系统路径的抽象类</p>
+<h6 id="file类的常见构造方法">File类的常见构造方法：</h6>
+<pre><code class="language-java">public File(String path)
+//注意：如果path是实际存在的路径，则该File对象表示的是目录；
+//如果path是文件名，则该File对象表示的是文件。 
+public File(String path,String name) 
+//注意：path是路径名，name是文件名
+public File(File dir,String name)
+//注意：dir是路径名，name是文件名
+</code></pre>
+<h6 id="文件或目录的生成">文件或目录的生成:</h6>
+<pre><code class="language-java">String getName( )； //得到一个文件的名称（不包括路径）
+String getPath( )； //得到一个文件的路径名 
+String getAbsolutePath( )；//得到一个文件的绝对路径名 
+String getParent( )； //得到一个文件的上一级目录名 
+String renameTo(File newName); //将当前文件名更名为给定文件的完整路径 
+</code></pre>
+<h4 id="文件处理file类">文件处理（File类）</h4>
+<h4 id="io-流概述">I/O 流概述</h4>
+<h4 id="掌握java流类的分类">掌握Java流类的分类</h4>
+<h4 id="常见的字节流">常见的字节流</h4>
+<p>InputStream、OutputStream、FileInputStream、FileOutputStream、DataInputStream、DataOutputStream、BufferedInputStream、BufferedOutputStream、System.in 、 System.out等</p>
+<h4 id="字符流">字符流</h4>
+<p>Reader、Writer、InputStreamReader、OutputStreamWriter、FileReader、FileWriter CharArrayReader、CharArrayWriter、BufferedReader、BufferedWriter</p>
+<h4 id="对象流">对象流</h4>
+<p>ObjectInputStream、ObjectOutputStream。</p>
+<h4 id="对象的序列化和反序列化">对象的序列化和反序列化</h4>
+<h3 id="多线程">多线程</h3>
+<h3 id="jdbc数据库编程">JDBC数据库编程</h3>
+<h4 id="jdbc的概念">JDBC的概念</h4>
+<ul>
+<li>JDBC（Java Database Connectivity，<strong>Java数据库连接</strong>）是一种用于执行SQL语句的Java API，可以为多种关系型数据库提供统一访问，它由一组用 Java 编程语言编写的类和接口组成。</li>
+<li>本质：
+<ul>
+<li>Java官方提供的一套<strong>规范(接口)</strong>。用于帮助开发人员快速实现不同关系型数据库的连接。</li>
+<li>各个数据库厂商去实现这套接口，提供数据库驱动jar包</li>
+<li>用JDBC编程，真正执行的代码是驱动jar包中的实现类</li>
+</ul>
+</li>
+</ul>
+<figure data-type="image" tabindex="22"><img src="https://hanakoro.github.io/post-images/image-20220505163800233.png" alt="image-20220505163800233" loading="lazy"></figure>
+<p>JDBC 为数据库开发人员提供了一组标准的API，使他们能够用纯Java API 来编写数据库应用程序。</p>
+<h5 id="jdbc工作原理">JDBC工作原理</h5>
+<p>JDBC有两部分组成，第一部分是供程序员调用的API，另一部分是需要数据库厂商实现的SPI（Servlce Provider Interface，数据库厂商需要实现的接口），也就是驱动程序。</p>
+<figure data-type="image" tabindex="23"><img src="https://hanakoro.github.io/post-images/image-20220425101944359.png" alt="image-20220425101944359" loading="lazy"></figure>
+<h4 id="jdbc-api">JDBC API</h4>
+<figure data-type="image" tabindex="24"><img src="https://hanakoro.github.io/post-images/image-20220425102007328.png" alt="image-20220425102007328" loading="lazy"></figure>
+<h5 id="drivermanager">DriverManager</h5>
+<p><code>DriverManager</code>驱动管理类</p>
+<ol>
+<li>
+<p>注册驱动</p>
+<ul>
+<li>注册给定的驱动程序：<code>static void registerDriver(Driver driver);</code></li>
+<li><code>Class.forName(&quot;oracle.jdbc.driver.OracleDriver&quot;);</code></li>
+<li><s>在<code>oracle.jdbc.driver.OracleDriver</code>类中存在静态代码块</s></li>
+</ul>
+</li>
+<li>
+<p>获取数据库连接</p>
+<p><code>static Connection</code> <code>getConnection(String url, String user, String pwd)</code></p>
+</li>
+</ol>
+<h5 id="connection">Connection</h5>
+<p><code>Connection</code>数据库连接对象</p>
+<ol>
+<li>
+<p>获取执行SQL的对象</p>
+<ul>
+<li>
+<p>普通执行SQL对象</p>
+<pre><code class="language-java">Statement    createStatement()
+</code></pre>
+</li>
+<li>
+<p>预编译SQL的执行SQL对象：防止SQL注入</p>
+<pre><code class="language-java">PreparedStatement    prepareStatement(sql)
+</code></pre>
+</li>
+<li>
+<p>执行存储过程的对象</p>
+<pre><code class="language-java">CallableStatement    prepareCall(sql)
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>管理事务</p>
+<ul>
+<li>
+<p>MySQL事务管理</p>
+<pre><code>开启事务：BEGIN;/START TRANSACTION;
+提交事务：COMMIT;
+回滚事务：ROLLBACK;
+
+MySQL默认自动提交事务
+</code></pre>
+</li>
+<li>
+<p>JDBC事务管理：Connection接口中定义了3个对应的方法</p>
+<pre><code>开启事务：setAutoCommit(boolean autoCommit);
+    true为自动提交事务；false为手动提交事务，即为开启事务
+提交事务：commit();
+回滚事务：rollback();
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="statement">Statement</h5>
+<ul>
+<li>
+<p>Statement作用：</p>
+<p>执行SQL语句</p>
+</li>
+<li>
+<p>执行SQL语句</p>
+<pre><code>int    executeUpdate(sql)：    执行DML、DDL语句
+返回值：(1)DML语句影响的行数    (2)DDL语句执行后，执行成功也可能返回0
+</code></pre>
+<pre><code>ResultSet    executeQuery(sql)：    执行DQL语句
+返回值：ResultSet 结果集对象
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p>SQL语句类型</p>
+<ul>
+<li>DDL语句：对表和库的增删改查操作</li>
+<li>DML语句：对数据的增删改操作</li>
+<li>DQL语句：对数据的查询操作</li>
+</ul>
+</blockquote>
+<h5 id="resultset">ResultSet</h5>
+<ul>
+<li>
+<p>ResultSet(结果集对象)作用：</p>
+<p>封装了DQL查询语句的结果</p>
+<pre><code>ResultSet    stmt.executeQuery(sql)：
+    执行DQL语句，返回ResultSet对象
+</code></pre>
+</li>
+<li>
+<p>获取查询结果</p>
+<pre><code>boolean    next()：(1)讲光标从当前位置想前移动一行    (2)判断当前行是否为有效行
+返回值：
+    - true：有效行，当前行有数据
+    - false：无效行，当前行没有数据
+</code></pre>
+<pre><code>xxx    getXxx(参数)：获取数据
+xxx：数据类型；如：int getInt(参数)；String getString(参数)
+参数：
+    - int：列的编号，从1开始
+    - String：列的名称
+</code></pre>
+</li>
+<li>
+<p>使用步骤</p>
+<ol>
+<li>
+<p>游标向下移动一行，并判断改行是否有数据：next()</p>
+</li>
+<li>
+<p>获取数据：getXxx(参数)</p>
+<pre><code class="language-java">//循环判断游标是否是最后一行末尾
+while(rs.next()) {
+ //获取数据
+ rs.getXxx(参数);
+}
+</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+<h5 id="preparedstatement">PreparedStatement</h5>
+<ul>
+<li>
+<p>作用：</p>
+<p>预编译SQL语句并执行：预防SQL注入问题</p>
+<blockquote>
+<p>SQL注入：SQL注入是通过操作输入来修改实现定义好的SQL语句，用以达到执行代码对服务器进行<strong>攻击</strong>的方法。</p>
+</blockquote>
+</li>
+<li>
+<p>步骤：</p>
+<ol>
+<li>
+<p>获取<code>PreparedStatement</code>对象</p>
+<pre><code class="language-java">//SQL语句中的参数值，使用?占位符替代
+String sql = &quot;select * from user where uname = ? and pwd = ?&quot;;
+
+//通过Connection对象获取，并传入对应的SQL语句
+PreparedStatement pstmt = conn.prepareStatement(sql);
+</code></pre>
+</li>
+<li>
+<p>设置参数值</p>
+<pre><code>PreparedStatement对象：setXxx(参数1, 参数2)：给?赋值
+    Xxx：数据类型; 如 setInt(参数1， 参数2)
+    参数：
+        参数1：?的位置编号，从1开始
+        参数2：?的值
+</code></pre>
+</li>
+<li>
+<p>执行SQL</p>
+<pre><code class="language-java">pstmt.executeUpdate(); //或executeQuery(); 不需要再传递SQL
+</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+<h6 id="preparedstatement原理">PreparedStatement原理</h6>
+<ul>
+<li>
+<p><code>PreparedStatement</code>好处：</p>
+<ol>
+<li>
+<p>预编译SQL，性能更高</p>
+</li>
+<li>
+<p>防止SQL注入：<strong>将敏感字符进行转义</strong></p>
+<ul>
+<li>
+<p><code>PreparedStatement</code>预编译功能开启：<code>useServerPrepStmts=true</code>加在url后<code>url&amp;useServerPrepStmts=true</code></p>
+</li>
+<li>
+<p>配置数据库执行日志(<em>重启数据库服务后生效</em>)</p>
+<figure data-type="image" tabindex="25"><img src="https://hanakoro.github.io/post-images/image-20220508170018181.png" alt="image-20220508170018181" loading="lazy"></figure>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>原理：</p>
+<ol>
+<li>在获取<code>PreparedStatement</code>对象时，将SQL语句发送给数据库服务器进行检查，编译（这些步骤很耗时）</li>
+<li>执行时就不用再进行这些步骤了，速度更快</li>
+<li>如果SQL模板一样，则只需要进行一次检查、编译</li>
+</ol>
+</li>
+</ul>
+<figure data-type="image" tabindex="26"><img src="https://hanakoro.github.io/post-images/image-20220425102026553.png" alt="image-20220425102026553" loading="lazy"></figure>
+<figure data-type="image" tabindex="27"><img src="https://hanakoro.github.io/post-images/image-20220425102050780.png" alt="image-20220425102050780" loading="lazy"></figure>
+<figure data-type="image" tabindex="28"><img src="https://hanakoro.github.io/post-images/image-20220425102125789.png" alt="image-20220425102125789" loading="lazy"></figure>
+<p>步骤：</p>
+<ol>
+<li>
+<p>加载驱动</p>
+<p><code>Class.forName(&quot;oracle.jdbc.driver.OracleDriver&quot;);</code></p>
+<p><code>Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</code></p>
+</li>
+<li>
+<p>建立连接</p>
+<pre><code class="language-java">String url = &quot;jdbc:oracle:thin:@localhost:1521:xe&quot;;
+String user = &quot;&quot;;
+String pws = &quot;&quot;;
+Connection conn = DriverManager.getConnection(url, user, pwd);
+if (conn != null){
+    System.out.print(&quot;连接成功&quot;);
+}
+</code></pre>
+</li>
+<li>
+<p>定义SQL语句</p>
+<pre><code class="language-java">String sql = &quot;&quot;;
+/*
+PreparedStatement pstm = conn.prepareStatement(sql);
+pstm.setInt(1, id);
+ResultSet rs = pstm.executeQuery();
+ */
+</code></pre>
+</li>
+<li>
+<p>获取执行SQL对象</p>
+<pre><code class="language-java">Statement stmt = conn.createStatement();
+</code></pre>
+</li>
+<li>
+<p>执行SQL</p>
+<pre><code class="language-java">stmt.executeUpdate(sql);
+</code></pre>
+</li>
+<li>
+<p>处理结果集</p>
+<pre><code class="language-java">while(rs.next()){
+    int id = rs.getInt(&quot;t_id&quot;);
+    System.out.print(id);
+}
+</code></pre>
+</li>
+<li>
+<p>释放资源(逆序释放 查询系 更新系)</p>
+<pre><code class="language-java">if (rs != null) {
+    rs.close();
+}
+if (st != null) {
+    st.close();
+}
+if (conn != null) {
+    conn.close();
+}
+</code></pre>
+</li>
+</ol>
+<figure data-type="image" tabindex="29"><img src="https://hanakoro.github.io/post-images/image-20220428095759413.png" alt="image-20220428095759413" loading="lazy"></figure>
+<h4 id="jdbc工具类">JDBC工具类</h4>
+<h5 id="抽取工具类">抽取工具类</h5>
+<ol>
+<li>
+<p>编写配置文件</p>
+<p>在src目录下创建<code>config.properties</code>配置文件</p>
+<pre><code class="language-properties">driverClass = oracle.jdbc.driver.OracleDriver
+url = jdbc:oracle:thin:@localhost:1521:xe
+username= Izumi
+password= 011020
+</code></pre>
+</li>
+<li>
+<p>编写JDBC工具类</p>
+<ol>
+<li>私有构造方法</li>
+<li>声明所需要的配置变量</li>
+<li>提供静态代码块
+<ul>
+<li>读取配置文件的信息为变量赋值
+<ol>
+<li>获取字节流对象</li>
+<li>从流对象中加载数据</li>
+</ol>
+</li>
+<li>注册驱动</li>
+</ul>
+</li>
+<li>提供获取数据库连接方法</li>
+<li>提供释放资源的方法</li>
+</ol>
+</li>
+<li>
+<p>使用JDBC工具类优化表的CRUD操作</p>
+</li>
+</ol>
+<h4 id="数据库连接池">数据库连接池</h4>
+<h5 id="概念">概念</h5>
+<ul>
+<li>数据库连接池是一个容器，负责分配、管理数据库连接(Connection)</li>
+<li>它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个；</li>
+<li>释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏</li>
+<li>好处：
+<ul>
+<li>资源重用</li>
+<li>提升系统相应速度</li>
+<li>避免数据库连接遗漏</li>
+</ul>
+</li>
+</ul>
+<h5 id="实现">实现</h5>
+<ul>
+<li>
+<p>标准接口：<strong>DataSource</strong></p>
+<ul>
+<li>
+<p>官方(SUN)提供的数据库连接池标准接口，由第三方组织实现此接口。</p>
+</li>
+<li>
+<p>功能：获取连接</p>
+<pre><code class="language-java">Connection getConnection();
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>常见的数据库连接池</p>
+<ul>
+<li>DBCP</li>
+<li>C3P0</li>
+<li>Druid</li>
+</ul>
+</li>
+<li>
+<p>Druid(德鲁伊)</p>
+<ul>
+<li>Druid连接器是阿里巴巴开源的数据库连接池项目</li>
+<li>功能强大，性能优秀，是Java语言最好的数据库连接池之一</li>
+</ul>
+</li>
+</ul>
+<h5 id="druid使用步骤">Druid使用步骤</h5>
+<ol>
+<li>导入jar包，例：<code>druid-1.1.12.jar</code></li>
+<li>定义配置文件</li>
+<li>加载配置文件</li>
+<li>获取数据库连接池对象</li>
+<li>获取连接</li>
+</ol>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#before">Before</a>
+<ul>
+<li><a href="#%E4%B8%80-java%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8E%9F%E7%90%86">一、Java跨平台原理</a>
+<ul>
+<li><a href="#1%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8E%9F%E7%90%86">1.跨平台原理</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C-jre%E5%92%8Cjkd">二、JRE和JKD</a>
+<ul>
+<li><a href="#1jrejava-runtime-environment">1.JRE（Java Runtime Environment）</a></li>
+<li><a href="#2jkdjava-development-kit">2.JKD（Java Development Kit）</a></li>
+<li><a href="#3jdk-jre%E5%92%8Cjvm%E7%9A%84%E5%85%B3%E7%B3%BB">3.JDK、JRE和JVM的关系</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-%E5%85%B6%E4%BB%96">三、其他</a>
+<ul>
+<li><a href="#1%E5%B8%B8%E7%94%A8dos%E5%91%BD%E4%BB%A4">1.常用DOS命令</a></li>
+<li><a href="#2%E6%B3%A8%E9%87%8A">2.注释</a></li>
+<li><a href="#3%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6">3.逻辑运算符</a>
+<ul>
+<li><a href="#%E7%9F%AD%E8%B7%AF%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6">短路逻辑运算符</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#start">Start</a>
+<ul>
+<li><a href="#%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5">键盘录入</a>
+<ul>
+<li><a href="#scanner-%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5%E6%AD%A5%E9%AA%A4">Scanner - 键盘录入步骤</a></li>
+</ul>
+</li>
+<li><a href="#random">Random</a></li>
+<li><a href="#%E6%95%B0%E7%BB%84">数组</a></li>
+<li><a href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1">面向对象</a></li>
+<li><a href="#%E9%9B%86%E5%90%88%E7%B1%BB">集合类</a>
+<ul>
+<li><a href="#arraylist">ArrayList</a>
+<ul>
+<li><a href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E5%92%8C%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95">构造方法和添加方法</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95">常用方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%BB%A7%E6%89%BF%E5%92%8C%E5%A4%9A%E6%80%81">继承和多态</a>
+<ul>
+<li><a href="#%E7%BB%A7%E6%89%BF">继承</a>
+<ul>
+<li><a href="#%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99">方法重写</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%BF%AE%E9%A5%B0%E7%AC%A6">修饰符</a>
+<ul>
+<li><a href="#%E5%8C%85">包</a></li>
+<li><a href="#%E5%AF%BC%E5%8C%85">导包</a></li>
+<li><a href="#%E4%BF%AE%E9%A5%B0%E7%AC%A6-2">修饰符</a>
+<ul>
+<li><a href="#%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6">权限修饰符</a></li>
+<li><a href="#%E7%8A%B6%E6%80%81%E4%BF%AE%E9%A5%B0%E7%AC%A6">状态修饰符</a>
+<ul>
+<li><a href="#final-%E6%9C%80%E7%BB%88%E6%80%81">final (最终态)</a></li>
+<li><a href="#static-%E9%9D%99%E6%80%81">static (静态)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%A4%9A%E6%80%81">多态</a>
+<ul>
+<li><a href="#%E6%88%90%E5%91%98%E8%AE%BF%E9%97%AE%E7%89%B9%E7%82%B9">成员访问特点</a></li>
+<li><a href="#%E5%A5%BD%E5%A4%84%E5%92%8C%E5%BC%8A%E7%AB%AF">好处和弊端</a></li>
+<li><a href="#%E5%A4%9A%E6%80%81%E4%B8%AD%E7%9A%84%E8%BD%AC%E5%9E%8B">多态中的转型</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB">抽象类</a>
+<ul>
+<li><a href="#%E6%A6%82%E8%BF%B0">概述</a></li>
+<li><a href="#%E7%89%B9%E7%82%B9">特点</a></li>
+<li><a href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98%E7%89%B9%E7%82%B9">抽象类的成员特点</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8E%A5%E5%8F%A3">接口</a>
+<ul>
+<li><a href="#%E6%A6%82%E8%BF%B0-2">概述</a></li>
+<li><a href="#%E6%8E%A5%E5%8F%A3%E7%9A%84%E7%89%B9%E7%82%B9">接口的特点</a></li>
+<li><a href="#%E6%8E%A5%E5%8F%A3%E7%9A%84%E6%88%90%E5%91%98%E7%89%B9%E7%82%B9">接口的成员特点</a></li>
+<li><a href="#%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%85%B3%E7%B3%BB">类和接口的关系</a></li>
+<li><a href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8C%BA%E5%88%AB">抽象类和接口的区别</a></li>
+<li><a href="#%E5%BD%A2%E5%8F%82%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC">形参和返回值</a>
+<ul>
+<li><a href="#%E7%B1%BB%E5%90%8D%E4%BD%9C%E4%B8%BA%E5%BD%A2%E5%8F%82%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC">类名作为形参和返回值</a></li>
+<li><a href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%90%8D%E4%BD%9C%E4%B8%BA%E5%BD%A2%E5%8F%82%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC">抽象类名作为形参和返回值</a></li>
+<li><a href="#%E6%8E%A5%E5%8F%A3%E5%90%8D%E4%BD%9C%E4%B8%BA%E5%BD%A2%E5%8F%82%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC">接口名作为形参和返回值</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%86%85%E9%83%A8%E7%B1%BB">内部类</a>
+<ul>
+<li><a href="#%E8%AE%BF%E9%97%AE%E7%89%B9%E7%82%B9">访问特点</a></li>
+<li><a href="#%E6%88%90%E5%91%98%E5%86%85%E9%83%A8%E7%B1%BB">成员内部类</a>
+<ul>
+<li><a href="#%E5%A4%96%E7%95%8C%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E6%88%90%E5%91%98%E5%86%85%E9%83%A8%E7%B1%BB">外界创建对象使用成员内部类</a></li>
+</ul>
+</li>
+<li><a href="#%E5%B1%80%E9%83%A8%E5%86%85%E9%83%A8%E7%B1%BB">局部内部类</a></li>
+<li><a href="#%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB">匿名内部类</a></li>
+</ul>
+</li>
+<li><a href="#api">API</a>
+<ul>
+<li><a href="#api%E6%A6%82%E8%BF%B0">API概述</a></li>
+<li><a href="#string%E5%92%8Cstringbuilder">String和StringBuilder</a>
+<ul>
+<li><a href="#string">String</a>
+<ul>
+<li><a href="#string%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95">String构造方法</a></li>
+<li><a href="#string%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%89%B9%E7%82%B9">String对象的特点</a></li>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%AF%94%E8%BE%83">字符串的比较</a></li>
+</ul>
+</li>
+<li><a href="#stringbuilder">StringBuilder</a>
+<ul>
+<li><a href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95">构造方法</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%92%8C%E5%8F%8D%E8%BD%AC%E6%96%B9%E6%B3%95">添加和反转方法</a></li>
+</ul>
+</li>
+<li><a href="#string%E5%92%8Cstringbuilder%E7%9B%B8%E4%BA%92%E8%BD%AC%E5%8C%96">String和StringBuilder相互转化</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BC%93%E5%86%B2%E7%B1%BB-stringbuffer">字符串缓冲类-StringBuffer</a>
+<ul>
+<li><a href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95-2">构造方法：</a></li>
+<li><a href="#%E6%96%B9%E6%B3%95">方法：</a></li>
+<li><a href="#%E4%BD%9C%E7%94%A8">作用：</a></li>
+</ul>
+</li>
+<li><a href="#math">Math</a>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-2">常用方法</a></li>
+</ul>
+</li>
+<li><a href="#system">System</a>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-3">常用方法</a></li>
+</ul>
+</li>
+<li><a href="#object">Object</a>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-4">常用方法</a></li>
+</ul>
+</li>
+<li><a href="#arrays">Arrays</a></li>
+<li><a href="#%E5%8C%85%E8%A3%85%E7%B1%BB">包装类</a>
+<ul>
+<li><a href="#%E5%8C%85%E8%A3%85%E7%B1%BB%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95">包装类的操作方法：</a></li>
+<li><a href="#integer%E7%B1%BB">Integer类</a></li>
+<li><a href="#int%E5%92%8Cstring%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2">int和String的相互转换</a></li>
+<li><a href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1%E5%92%8C%E6%8B%86%E7%AE%B1">自动装箱和拆箱</a></li>
+</ul>
+</li>
+<li><a href="#%E6%97%A5%E6%9C%9F%E7%B1%BB">日期类</a>
+<ul>
+<li><a href="#date%E7%B1%BB">Date类</a>
+<ul>
+<li><a href="#date%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95">Date类常用方法</a></li>
+</ul>
+</li>
+<li><a href="#simpledateformat%E7%B1%BB">SimpleDateFormat类</a>
+<ul>
+<li><a href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95-3">构造方法</a></li>
+</ul>
+</li>
+<li><a href="#calendar%E7%B1%BB">Calendar类</a><br>
+*</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86">Java异常处理</a>
+<ul>
+<li><a href="#java%E5%BC%82%E5%B8%B8%E5%88%86%E7%B1%BB">Java异常分类：</a></li>
+<li><a href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86">异常处理</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9B%86%E5%90%88%E7%B1%BB-2">集合类</a></li>
+<li><a href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81">输入输出流</a>
+<ul>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86">文件处理</a>
+<ul>
+<li><a href="#file">File</a>
+<ul>
+<li><a href="#file%E7%B1%BB%E7%9A%84%E5%B8%B8%E8%A7%81%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95">File类的常见构造方法：</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95%E7%9A%84%E7%94%9F%E6%88%90">文件或目录的生成:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86file%E7%B1%BB">文件处理（File类）</a></li>
+<li><a href="#io-%E6%B5%81%E6%A6%82%E8%BF%B0">I/O 流概述</a></li>
+<li><a href="#%E6%8E%8C%E6%8F%A1java%E6%B5%81%E7%B1%BB%E7%9A%84%E5%88%86%E7%B1%BB">掌握Java流类的分类</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%97%E8%8A%82%E6%B5%81">常见的字节流</a></li>
+<li><a href="#%E5%AD%97%E7%AC%A6%E6%B5%81">字符流</a></li>
+<li><a href="#%E5%AF%B9%E8%B1%A1%E6%B5%81">对象流</a></li>
+<li><a href="#%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96">对象的序列化和反序列化</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B">多线程</a></li>
+<li><a href="#jdbc%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BC%96%E7%A8%8B">JDBC数据库编程</a>
+<ul>
+<li><a href="#jdbc%E7%9A%84%E6%A6%82%E5%BF%B5">JDBC的概念</a>
+<ul>
+<li><a href="#jdbc%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86">JDBC工作原理</a></li>
+</ul>
+</li>
+<li><a href="#jdbc-api">JDBC API</a>
+<ul>
+<li><a href="#drivermanager">DriverManager</a></li>
+<li><a href="#connection">Connection</a></li>
+<li><a href="#statement">Statement</a></li>
+<li><a href="#resultset">ResultSet</a></li>
+<li><a href="#preparedstatement">PreparedStatement</a>
+<ul>
+<li><a href="#preparedstatement%E5%8E%9F%E7%90%86">PreparedStatement原理</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#jdbc%E5%B7%A5%E5%85%B7%E7%B1%BB">JDBC工具类</a>
+<ul>
+<li><a href="#%E6%8A%BD%E5%8F%96%E5%B7%A5%E5%85%B7%E7%B1%BB">抽取工具类</a></li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0">数据库连接池</a>
+<ul>
+<li><a href="#%E6%A6%82%E5%BF%B5">概念</a></li>
+<li><a href="#%E5%AE%9E%E7%8E%B0">实现</a></li>
+<li><a href="#druid%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4">Druid使用步骤</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hanakoro.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://hanakoro.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
